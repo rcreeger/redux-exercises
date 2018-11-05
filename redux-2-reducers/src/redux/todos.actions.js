@@ -1,18 +1,18 @@
-export const ADD_TODO = 'ADD_TODO'
-export const REMOVE_TODO = 'REMOVE_TODO'
+export const ADD_GROCERY = "ADD_GROCERY";
+export const REMOVE_TODO = "REMOVE_GROCERY";
 
 // Your job is to write two action creators:
 
-export const addTodo = Todo => {
+export const addGrocery = newGrocery => {
   return {
-    type: ADD_TODO,
-    payload: TODO
-  }
-}
+    type: ADD_GROCERY,
+    payload: newGrocery
+  };
+};
 
-export const removeTodo = id => {
+export const removeGrocery = id => {
   return {
-    type: REMOVE_Todo,
+    type: REMOVE_GROCERY,
     payload: id
-  }
-}
+  };
+};
