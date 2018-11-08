@@ -1,12 +1,12 @@
 export const ADD_TODO = "ADD_TODO";
 export const REMOVE_TODO = "REMOVE_TODO";
 
-export const addTodo = todos => {
+export const addTodo = newTodo => {
   let action = {
     type: ADD_TODO,
     payload: {
       id: Math.random(),
-      title: todos,
+      title: newTodo,
       completed: false
     }
   };

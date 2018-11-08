@@ -1,4 +1,4 @@
-import { ADD_TODO, REMOVE_TODO } from "./todos.actions";
+import { ADD_TODO, REMOVE_TODO } from "../actions/todos.actions";
 
 let initialState = [
   {

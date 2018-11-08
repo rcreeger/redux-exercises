@@ -1,4 +1,4 @@
-import { ADD_TODO, REMOVE_TODO } from './todos.actions'
+import { ADD_TODO, REMOVE_TODO } from "./todos.actions";
 
 let initialState = [
   {
@@ -16,18 +16,18 @@ let initialState = [
     title: "fugiat veniam minus",
     completed: false
   }
-]
+];
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
-      return [...state, action.payload]
+      return [...state, action.payload];
 
     case REMOVE_TODO:
-      let selectedTodoId = action.payload
-      return state.filter(todo => todo.id === Number(selectedTodoId))
-  
+      let selectedTodoId = action.payload;
+      return state.filter(todo => todo.id !== +selectedTodoId);
+
     default:
-      return state
+      return state;
   }
-}
+};
